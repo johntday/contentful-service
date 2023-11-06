@@ -1,0 +1,9 @@
+<h2>Product list</h2>
+<ul class="u-listReset">
+  <li
+    *ngFor="let product of products"
+    routerLink="/single-product/{{product?.fields?.slug}}"
+  >
+    {{ product.fields.name }}
+  </li>
+</ul>
